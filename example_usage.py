@@ -49,7 +49,7 @@ def main() -> None:
     print("Files:", result_video.filepaths)
 
     # Audio-only download using explicit config.
-    config = DownloadConfig(url=url, output_dir="downloads_audio", audio_only=True)
+    config = DownloadConfig(url=url, output_dir="downloads", audio_only=True)
     result_audio = service.download(config, on_progress=print_progress, on_log=print_log)
     print("Audio download success:", result_audio.success)
     print("Files:", result_audio.filepaths)
